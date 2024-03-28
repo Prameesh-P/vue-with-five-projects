@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Vue Learning</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style>
+        
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 1.6;
+                background: #FFFFFF;
+                max-width: 960px;
+                margin: 20px auto;
+
+            }
+            p,h3,ul{
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                list-style-type: none;
+                background: #D3F1ED;
+                margin: 20px auto;
+                padding: 10px 20px;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+            }
+            li.fav{
+                background: #ff6699;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Vue</h1>
+        <div id="app">
+            <!-- <div v-if="showData">
+            <h1>{{name}}</h1>
+            <h2>{{age}}</h2>
+             </div> 
+            <button v-on:click="name = 'Name Updated'" >Name Updation Button </button>
+            <button v-on:click="age++" >Age Increasing Button </button>
+            <button v-on:click="age--" >Age Decreasing Button </button> 
+            <div v-for="car in car_data" class="new">
+                <ul>
+                    <li>{{car.name}}</li>
+                    <li>{{car.year}}</li>
+                </ul>
+            </div>
+            </div>
+           
+        <div class="box" @mouseover="handleEvent"> Mouse Over</div>
+        <div class="box" @dblclick="handleEvent">Double Click</div>
+        <div class="box" @mousemove="printOffset">position - {{x}} - {{y}}</div>
+        <div class="box" @mouseleave="handleEvent">Mouse Leave</div> -->
+        <div v-if="showData">
+            <div class="datas">
+                <div class="section">
+                    <h2>All Anime</h2>
+                    <ul>
+                        <li v-for="anime in anime_data" :class="{fav : anime.isFav}" @click="toggleFav(anime)">
+                            <img :src="anime.img" :alt="anime.name" width="100px" height="100px" />
+                            <h3>{{anime.name}}</h3>
+                            <p>{{anime.year}}</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+   
+       </div>
+       <div>
+        <button @click="toggleData">
+        <span>Hide Data</span>
+        <span>Show Data</span>
+    </button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
