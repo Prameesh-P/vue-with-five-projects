@@ -12,8 +12,8 @@
 </template>
 
 <script setup>
-import ServData from  '../components/serviceData'
-import Card from '../components/Card.vue'
+import ServData from  '@/components/serviceData'
+import Card from '@/components/Card.vue'
 </script>
 
 <style scoped>

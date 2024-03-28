@@ -4,9 +4,9 @@ import work2 from '../assets/images/work2.jpg';
 import work3 from '../assets/images/work3.jpg';
 import work4 from '../assets/images/work4.jpg';
 import work5 from '../assets/images/work5.jpg';
-import work6 from '../assets/images/work6.png';
+// import work6 from '../assets/images/work6.png';
 
-const ServData = {
+const ServDetails = {
     'BackEndDevelopment': {
         imgsrc: work,
         details: "Backend development involves working on the server-side of web applications, focusing on database management, server logic, and API integrations."
@@ -30,11 +30,11 @@ const ServData = {
     'CloudComputing': {
         imgsrc: work5,
         details: "Cloud computing involves delivering computing services over the internet, including storage, databases, servers, networking, and software."
-    },
-    'MachineLearning': {
-        imgsrc: work6,
-        details: "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."
     }
+    // 'MachineLearning': {
+    //     imgsrc: work6,
+    //     details: "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed."
+    // }
 };
 
-export default ServData
+export default ServDetails

@@ -26,9 +26,8 @@ const router = createRouter({
 })
 
 const createRoutes = ()=>{
-    console.log(ServData);
     for (let i = 0; i < ServData.length; i++) {
-        router.addRoute({path: '/service/'+ServData[i].title, name: ServData[i].title, component: () => ServiceDetailsView});
+        router.addRoute({path: '/'+ServData[i].title, name: ServData[i].title, component: () => ServiceDetailsView});
     }
 }
 createRoutes()
